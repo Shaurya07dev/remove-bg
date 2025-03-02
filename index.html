@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove-bg | Instant Background Removal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">remove-bg</div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#api">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Erase Backgrounds in Seconds</h1>
+                <p>Transform your images instantly with our AI-powered background removal tool.</p>
+            </div>
+        </section>
+
+        <section class="upload-result">
+            <div class="container split-screen">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <h2>Upload Your Image</h2>
+                        <p>Drag & drop your image here, or click to browse</p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </div>
+                </div>
+                <div class="result-area" id="resultArea">
+                    <div class="result-content">
+                        <h2>Result</h2>
+                        <div class="image-container">
+                            <img id="resultImage" src="/placeholder.svg" alt="Processed Image" class="hidden">
+                            <div id="loadingIndicator" class="hidden">
+                                <div class="spinner"></div>
+                                <p>Removing background...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 remove-bg. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button id="uploadBtn" class="fab" aria-label="Upload Image">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+    </button>
+
+    <a id="downloadBtn" class="fab download hidden" download="removed-bg.png" aria-label="Download Processed Image">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
