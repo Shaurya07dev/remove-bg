@@ -2,7 +2,9 @@
 
 A sleek and efficient web application that removes backgrounds from images using the remove.bg API. Built as part of the Liftoff club at SRMIST.
 
-![Remove-BG Demo](demo.gif)
+> 🌐 **Live Demo:** [Click here to view the project](https://shaurya07dev.github.io/remove-bg/)  
+> 📁 **GitHub Repository:** [remove-bg](https://github.com/Shaurya07dev/remove-bg)
+
 
 ## ✨ Features
 
@@ -41,6 +43,10 @@ A sleek and efficient web application that removes backgrounds from images using
    # Using Node.js
    npx serve
    ```
+
+4. Or you can use microsoft preview extension in vs code to run locally.
+
+
 
 ## 💻 Usage
 
@@ -85,9 +91,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
